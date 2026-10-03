@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <title>Suhit &amp; Charitha — An Evening Under the Stars</title>
-    <meta name="description" content="An intimate evening of laughter, rituals, and shared tomorrows. Join Dr. Suhit &amp; Dr. Sai Charitha on Saturday, 14th November 2026 at Sandhya Convention." />
+    <meta name="description" content="An intimate evening of laughter, rituals, and shared tomorrows. Join Suhit &amp; Sai Charitha on Saturday, 14th November 2026 at Sandhya Convention." />
     <link rel="canonical" href="https://invitestory123.github.io/suhit-weds-charitha/" />
 
     <!-- Open Graph (OG) Markup -->
@@ -19,7 +19,7 @@
     <meta property="og:site_name" content="Suhit &amp; Charitha Wedding Celebrations" />
     <meta property="og:url" content="https://invitestory123.github.io/suhit-weds-charitha/" />
     <meta property="og:title" content="Suhit &amp; Charitha — An Evening Under the Stars" />
-    <meta property="og:description" content="An intimate evening of laughter, rituals, and shared tomorrows. Join Dr. Suhit &amp; Dr. Sai Charitha on Saturday, 14th November 2026 at Sandhya Convention." />
+    <meta property="og:description" content="An intimate evening of laughter, rituals, and shared tomorrows. Join Suhit &amp; Sai Charitha on Saturday, 14th November 2026 at Sandhya Convention." />
     <meta property="og:image" content="https://invitestory123.github.io/suhit-weds-charitha/assets/og-image.jpg" />
     <meta property="og:image:secure_url" content="https://invitestory123.github.io/suhit-weds-charitha/assets/og-image.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
@@ -32,7 +32,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://invitestory123.github.io/suhit-weds-charitha/" />
     <meta name="twitter:title" content="Suhit &amp; Charitha — An Evening Under the Stars" />
-    <meta name="twitter:description" content="An intimate evening of laughter, rituals, and shared tomorrows. Join Dr. Suhit &amp; Dr. Sai Charitha on Saturday, 14th November 2026 at Sandhya Convention." />
+    <meta name="twitter:description" content="An intimate evening of laughter, rituals, and shared tomorrows. Join Suhit &amp; Sai Charitha on Saturday, 14th November 2026 at Sandhya Convention." />
     <meta name="twitter:image" content="https://invitestory123.github.io/suhit-weds-charitha/assets/og-image.jpg" />
     <meta name="twitter:image:alt" content="Suhit &amp; Charitha Wedding Reception — An Evening Under the Stars" />
     <script src="./editable/wedding-data.js"></script>
@@ -48,6 +48,48 @@
       }
       [code-path="src/sections/Venue.tsx:26:9"] {
         display: none !important;
+      }
+
+      /* 1. Remove 'You are cordially invited to' on Intro Gate so names center in mandala */
+      [code-path="src/sections/IntroGate.tsx:115:11"] {
+        display: none !important;
+      }
+      [code-path="src/sections/IntroGate.tsx:98:9"] {
+        gap: 1.25rem !important;
+      }
+
+      /* 2. Remove sacred verse above door arch and bring rest of matter into vertical center of the door */
+      [code-path="src/sections/Hero.tsx:113:13"] {
+        display: none !important;
+      }
+      [code-path="src/sections/Hero.tsx:112:11"] {
+        padding-top: 14% !important;
+        padding-bottom: 8% !important;
+        justify-content: center !important;
+      }
+      [code-path="src/sections/Hero.tsx:121:13"] {
+        margin-top: 0 !important;
+      }
+
+      /* 3. Reduce invitation message text font size by 2 (from 24px to 22px) */
+      [code-path="src/sections/InviteMessage.tsx:10:5"] {
+        font-size: 22px !important;
+        line-height: 1.65 !important;
+      }
+
+      /* 4a & 5. Section titles: reduce font size and ensure head/toe loops are never cut off */
+      [code-path="src/components/Reveal.tsx:39:7"] {
+        font-size: 2.25rem !important;
+        line-height: 1.4 !important;
+        padding-top: 0.35rem !important;
+        padding-bottom: 0.35rem !important;
+        overflow: visible !important;
+      }
+      @media (min-width: 640px) {
+        [code-path="src/components/Reveal.tsx:39:7"] {
+          font-size: 2.75rem !important;
+          line-height: 1.4 !important;
+        }
       }
 
       /* Floating Background Music Controller */
@@ -155,7 +197,7 @@
     </button>
 
     <!-- WhatsApp RSVP Floating Button -->
-    <a id="whatsapp-rsvp" class="bg-whatsapp-rsvp" href="https://wa.me/918008066366?text=Hello%20Dr.%20Suhit%20%26%20Dr.%20Sai%20Charitha!%20We%20would%20love%20to%20RSVP%20for%20your%20Wedding%20Reception%20on%2014th%20November%202026." target="_blank" rel="noopener noreferrer" aria-label="RSVP via WhatsApp">
+    <a id="whatsapp-rsvp" class="bg-whatsapp-rsvp" href="https://wa.me/918008066366?text=Hello%20Suhit%20%26%20Sai%20Charitha!%20We%20would%20love%20to%20RSVP%20for%20your%20Wedding%20Reception%20on%2014th%20November%202026." target="_blank" rel="noopener noreferrer" aria-label="RSVP via WhatsApp">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.584 1.961.949 3.23.949 3.179 0 5.765-2.587 5.765-5.766.001-3.182-2.585-5.766-5.769-5.766zm0 10.375c-1.127 0-2.032-.379-2.91-.89l-.208-.124-1.574.412.42-1.534-.136-.217c-.573-.915-.875-1.782-.874-2.856.002-2.539 2.067-4.605 4.609-4.605 2.54 0 4.605 2.066 4.605 4.606 0 2.54-2.066 4.604-4.605 4.604zm2.527-3.447c-.139-.07-.822-.406-.949-.452-.127-.046-.22-.07-.313.07-.092.14-.36.452-.441.545-.081.093-.162.105-.301.035-.14-.07-.588-.217-1.12-.691-.415-.369-.695-.826-.776-.965-.081-.14-.009-.215.061-.284.063-.062.14-.162.209-.243.07-.081.093-.14.14-.232.046-.093.023-.174-.012-.243-.035-.07-.313-.754-.429-1.032-.113-.27-.228-.233-.313-.238l-.267-.005c-.093 0-.244.035-.371.174-.128.14-.488.476-.488 1.16 0 .684.498 1.345.568 1.438.07.093.98 1.496 2.374 2.098.332.144.591.23.793.294.333.106.637.091.877.055.267-.04.822-.336.938-.661.116-.325.116-.603.081-.661-.035-.058-.128-.093-.267-.163z"/>
         <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.76.459 3.479 1.332 4.992l-1.417 5.176 5.305-1.391c1.458.796 3.103 1.216 4.77 1.217 5.505 0 9.988-4.478 9.989-9.984 0-5.506-4.482-9.994-9.989-9.994zm0 18.283c-1.516 0-3.003-.408-4.302-1.179l-.309-.184-3.197.838.853-3.117-.202-.321c-.847-1.347-1.295-2.915-1.294-4.52.001-4.568 3.719-8.284 8.29-8.284 4.568 0 8.285 3.717 8.286 8.285 0 4.569-3.719 8.285-8.286 8.285z"/>
@@ -185,7 +227,7 @@
           const rsvpLink = document.getElementById('whatsapp-rsvp');
           if (rsvpLink) {
             const num = window.WEDDING_DATA.rsvp.whatsappNumber || "918008066366";
-            const msg = encodeURIComponent(window.WEDDING_DATA.rsvp.message || "Hello! We would like to RSVP for Dr. Suhit & Dr. Sai Charitha's wedding reception.");
+            const msg = encodeURIComponent(window.WEDDING_DATA.rsvp.message || "Hello! We would like to RSVP for Suhit & Sai Charitha's wedding reception.");
             rsvpLink.href = "https://wa.me/" + num + "?text=" + msg;
           }
         }

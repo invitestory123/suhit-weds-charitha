@@ -11,8 +11,8 @@ window.WEDDING_DATA = {
   couple: {
     groom: "Suhit",
     bride: "Charitha",
-    groomFull: "Dr. Suhit Vetcha",
-    brideFull: "Dr. Sai Charitha",
+    groomFull: "Suhit",
+    brideFull: "Sai Charitha",
     groomParents: "Son of Dr. Sarat Vetcha & Smt. Surekha Vetcha",
     brideParents: "D/o. Sri Amara Sudhakara Rao & Smt. Sudha Madhuri (Late)",
     grandparents: "With blessings of Sri Vetsa Panduranga Rao (Late) & Smt. Jhansi",
@@ -37,7 +37,7 @@ window.WEDDING_DATA = {
 
   verse: {
     hindi: "|| Srirasthu || Subhamasthu || Avighnamasthu ||",
-    text: "With the divine blessings of Almighty & Sri Vetsa Panduranga Rao (Late) & Smt. Jhansi, Dr. Sarat Vetcha & Smt. Surekha Vetcha cordially invite you to grace the auspicious occasion and bless the newlyweds at the marriage reception of their son Dr. Suhit with Dr. Sai Charitha (D/o. Sri Amara Sudhakara Rao & Smt. Sudha Madhuri [Late]).",
+    text: "With the divine blessings of Almighty & Sri Vetsa Panduranga Rao (Late) & Smt. Jhansi, Dr. Sarat Vetcha & Smt. Surekha Vetcha cordially invite you to grace the auspicious occasion and bless the newlyweds at the marriage reception of their son Suhit with Sai Charitha (D/o. Sri Amara Sudhakara Rao & Smt. Sudha Madhuri [Late]).",
   },
 
   events: [
@@ -50,7 +50,7 @@ window.WEDDING_DATA = {
       monthLabel: "November 2026",
       time: "7:00 PM onwards (Dinner follows)",
       venue: "Sandhya Convention, Old Mumbai Highway, Gachibowli, Hyderabad - 500 032",
-      note: "Join us to celebrate and bless Dr. Suhit & Dr. Sai Charitha as they begin their sacred journey together.",
+      note: "Join us to celebrate and bless Suhit & Sai Charitha as they begin their sacred journey together.",
     },
   ],
 
@@ -84,7 +84,7 @@ window.WEDDING_DATA = {
   rsvp: {
     phone: "+918008066366",
     whatsappNumber: "918008066366",
-    message: "Hello! We would like to RSVP for Dr. Suhit & Dr. Sai Charitha's wedding reception on 14th November 2026.",
+    message: "Hello! We would like to RSVP for Suhit & Sai Charitha's wedding reception on 14th November 2026.",
   },
 
   footer: {

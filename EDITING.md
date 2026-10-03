@@ -1,6 +1,6 @@
 # Customer Editing Guide — Suhit & Charitha Wedding Celebrations
 
-This digital invitation is designed for the wedding celebrations and reception of **Dr. Suhit & Dr. Sai Charitha**, featuring starry night sky animations, Lord Ganesha blessing, celestial archway, countdown timer, multiple celebration timeline, interactive Google Maps directions to Sandhya Convention, background music player, and WhatsApp RSVP.
+This digital invitation is designed for the wedding celebrations and reception of **Suhit & Sai Charitha**, featuring starry night sky animations, Lord Ganesha blessing, celestial archway, countdown timer, multiple celebration timeline, interactive Google Maps directions to Sandhya Convention, background music player, and WhatsApp RSVP.
 
 ---
 
@@ -12,7 +12,7 @@ All routine customer edits are configured in:
 ### Couple Profiles & Family
 Edit `couple` in `editable/wedding-data.js`:
 - `groom` & `bride`: First names (`"Suhit"`, `"Charitha"`)
-- `groomFull` & `brideFull`: Full ceremonial names (`"Dr. Suhit Vetcha"`, `"Dr. Sai Charitha"`)
+- `groomFull` & `brideFull`: Full ceremonial names (`"Suhit"`, `"Sai Charitha"`)
 - `groomParents`: `"Son of Dr. Sarat Vetcha & Smt. Surekha Vetcha"`
 - `brideParents`: `"D/o. Sri Amara Sudhakara Rao & Smt. Sudha Madhuri (Late)"`
 - `grandparents`: `"With blessings of Sri Vetsa Panduranga Rao (Late) & Smt. Jhansi"`
