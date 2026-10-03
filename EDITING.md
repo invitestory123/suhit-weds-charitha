@@ -17,7 +17,7 @@ Edit `couple` in `editable/wedding-data.js`:
 - `brideParents`: `"D/o. Sri Amara Sudhakara Rao & Smt. Sudha Madhuri (Late)"`
 - `grandparents`: `"With blessings of Sri Vetsa Panduranga Rao (Late) & Smt. Jhansi"`
 - `compliments`: `"With best compliments from: Near & Dear"`
-- `hashtag`: Wedding hashtag (`"#SuhitWedsCharitha"`)
+- `hashtag`: Wedding hashtag (`"#SuCharitham"`)
 - `monogram`: Monogram initials (`"S · C"`)
 - `order`: `"groomFirst"`
 
